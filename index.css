@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .table {
+    box-sizing: content-box;
+    position: relative;
+    width: 700px;
+    height: 750px;
+    margin: 10px auto;
+    background: url(./static/bac.png);
+    border: 50px solid transparent;
+  }
+
+  .table .td {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 1px solid gray;
+  }
+
+  .table .td:nth-child(15n) {
+    border-right-color: transparent;
+  }
+
+  .table span {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -border: 1px solid rgba(244, 22, 22, 0.5);
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    line-height: 40px;
+    color: gray;
+  }
+
+  .table span:nth-of-type(113):after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -5px 0 0 -5px;
+    background: #333;
+    border-radius: 50%;
+  }
+
+  .table span:nth-of-type(49):after,
+  .table span:nth-of-type(57):after,
+  .table span:nth-of-type(169):after,
+  .table span:nth-of-type(177):after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -3px 0 0 -3px;
+    background: #666;
+    border-radius: 50%;
+  }
+
+  .table span.active::after {
+    display: none;
+  }
+
+  .table-info {
+    width: 800px;
+    margin: 5px auto 0;
+    background: url(./wzqbg.png);
+    height: 60px;
+    padding: 5px;
+  }
+
+  .table-info > div {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .black {
+    background: black;
+    margin-right: 10px;
+  }
+
+  .white {
+    background: white;
+  }
+
+  .table-info .active {
+    box-shadow: 0 0 5px 2px limegreen;
+  }
